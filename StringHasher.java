@@ -2,6 +2,13 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class StringHasher {
+     /**
+     * Hashes a given string using SHA-256 and returns the resulting hash as a hexadecimal string.
+     *
+     * @param input The string to be hashed.
+     * @return A hexadecimal representation of the hashed string.
+     * @throws RuntimeException If the hashing algorithm is not available.
+     */
     public static String hashString(String input) {
         try {
             // Create a MessageDigest instance for SHA-256
